@@ -32,6 +32,8 @@ function digitalClock() {
   let minute = now.getMinutes();
   let second = now.getSeconds();
   second = second < 10 ? "0" + second : second;
+  minute = minute < 10 ? "0" + minute : minute;
+  hour = hour < 10 ? "0" + hour : hour;
   let time = hour + ":" + minute + ":" + second;
   let currentTime = document.querySelector(".digital-clock");
   currentTime.innerHTML = time;
