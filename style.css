@@ -1,0 +1,72 @@
+* {
+  background: #018ded url(https://unsplash.it/1500/1000?image=881&blur=5);
+  background-size: cover;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-size: 10px;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1 auto;
+  min-height: 100vh;
+  align-items: center;
+}
+
+.clock {
+  width: 30rem;
+  height: 30rem;
+  border: 20px solid whitesmoke;
+  margin: 30px auto;
+  position: relative;
+  padding: 2rem;
+  border-radius: 50%;
+  position: relative;
+  box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.1), inset 0 0 0 3px #efefef,
+    inset 0 0 10px black, 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.clock-face {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform: translateY(-3px);
+  border-radius: 50%;
+  border-style: none;
+  outline: none;
+}
+
+.hand {
+  width: 50%;
+  height: 6px;
+  background: brown;
+  position: absolute;
+  top: 50%;
+  transform-origin: 100%;
+  transform: rotate(90deg);
+  transition: all 0.05;
+  transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+}
+.second-hand {
+  height: 3px;
+}
+.min-hand {
+  width: 40%;
+  left: 10%;
+}
+.digital-clock {
+  margin-top: 5rem;
+  width: 30rem;
+  border: 6px solid black;
+  height: 10rem;
+  text-align: center;
+  border-radius: 7%;
+  font-weight: bolder;
+  font-size: 5rem;
+  color: black;
+  padding: 1rem 0;
+}
